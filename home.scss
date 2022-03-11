@@ -1,0 +1,90 @@
+// .header {
+//     width: 100%;
+//     height: 100px;
+//     background-color: grey;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     position: fixed;
+//     h1 {
+//         font-size: 60px;
+//         text-align: center;
+//         padding-top: 20px;
+//     }
+// }
+
+body {
+    height: 100vh;
+}
+
+.timeline {
+    width: calc(100% - 200px);
+    height: 100%;
+    // margin: 100px 0 0 200px;
+    margin: 0 0 0 200px;
+    padding: 50px 0 100px 0;
+    background: url('./image/22927272_l.jpg') center center / cover no-repeat;
+    background-attachment: fixed;
+    &__post {
+        background-color: #fff;
+        width: 600px;
+        height: 100px;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 30px;
+        border: solid 1px black;
+        border-radius: 20px;
+        position: relative;
+        &--good {
+            display: flex;
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            p.heart {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    position: fixed;
+    background-color: blue;
+    border-radius: 100%;
+    .fa-plus {
+        position: relative;
+        top: 19px;
+        left: 26px;
+        color: white;
+    }
+}
+
+.naviMenu {
+    background-color: rgb(220, 220, 220);
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    // top: 100px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    &__home,
+    &__search,
+    &__profile {
+        margin-left: 55px;
+    }
+}
+i {
+    color: black;
+}
+.fa-heart {
+    color: red;
+}

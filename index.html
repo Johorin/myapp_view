@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <title>SELF-SUFFICIENT BLOG</title>
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <!-- Font Awesome -->
+        <!-- <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet"> -->
+        <script src="https://kit.fontawesome.com/36ab7b134f.js" crossorigin="anonymous"></script>
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="./reset.css">
+        <link rel="stylesheet" href="./home.css">
+    </head>
+    <body>
+        <!-- <div class="header">
+            <h1>SELF-SUFFICIENT BLOG</h1>
+        </div> -->
+        <div class='timeline'>
+            <div class='timeline__post'>
+                <div class="timeline__post--profileImage">
+                    <p>トプ画</p>
+                </div>
+                <p class='body'>This is a sample body.</p>
+                <div class="timeline__post--good">
+                    <p class="heart"><i class="fa-solid fa-heart"></i></p>
+                    <p>いいね数</p>
+                </div>
+            </div>
+        </div>
+            <a class="createPost" href="#">
+                <div class="circle">
+                    <i class="fa-solid fa-plus fa-7x"></i>
+                </div>
+            </a>
+        <!-- 特に次のクラスをCSSでレスポンシブ化 -->
+        <div class="naviMenu">
+            <div class="naviMenu__home">
+                <a href="#"><i class="fa-solid fa-house fa-5x"></i></a>
+            </div>
+            <div class="naviMenu__search">
+                <a href="#"><i class="fa-solid fa-magnifying-glass fa-5x"></i></a>
+            </div>
+            <div class="naviMenu__profile">
+                <a href="#"><i class="fa-solid fa-user fa-5x"></i></a>
+            </div>
+        </div>
+    </body>
+</html>
